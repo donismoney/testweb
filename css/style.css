@@ -1,0 +1,32 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,table,tr,th,td{ margin:0; padding:0; }
+li{ list-style:none; }
+a{ text-decoration:none; }
+button{ border:0; background:none; cursor:pointer; } 
+section{float:left; clear:both; width:100%; } 
+#header{ background:#000; }
+#header{ 
+    position:fixed; left:0; top:0; z-index:1;
+    width:100%; height:80px;
+    background:#000;
+}
+.header_wrap{ width:1200px; height:80px; margin:0 auto; }
+h1{
+    font-size:20px; width:130px; line-height: 80px; 
+    padding:15px 0 0 10px; float:left;
+}
+.nav_btn, .nav_close_btn{ display:none; }
+nav{ float:right; margin-right:30px; }
+
+.gnb li{ width:130px; height:80px; float:left; }
+
+.gnb button{
+    display:block;
+    width:100%; height:80px;
+    font-size:20px; font-weight:bold;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    color:#fff; font-family:Josefin Sans;
+}
+.gnb button:hover{ border-bottom:5px solid #fff; box-sizing:border-box; }
+
+
+#container{ margin-top:80px; }
