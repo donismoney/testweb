@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,table,tr,th,td{ margin:0; padding:0; }
+li{ list-style:none; }
+a{ text-decoration:none; }
+button{ border:0; background:none; cursor:pointer; } 
+section{float:left; clear:both; width:100%; } 
+.intro{ background: url(../images/intro_bg.jpg) no-repeat center top/cover fixed;} 
+.job{ background: url(../images/job_bg.jpg) no-repeat center top/cover fixed; }
+.port{ background: url(../images/port_bg.jpg) no-repeat center top/cover fixed; }
+.contact{ background: url(../images/contact_bg.jpg) no-repeat center top/cover fixed; }  
+.profile{ background:#000; }  
+.edu{ background:#000; }   
+.job{ background:#000; }
+.port{ background:#000; }
+.contact{ background:#000; }
+
+#header{ background:#000; }
+#header{ 
+    position:fixed; left:0; top:0; z-index:1;
+    width:100%; height:80px;
+    background:#000;
+}
+.header_wrap{ width:1200px; height:80px; margin:0 auto; }
+h1{
+    font-size:20px; line-height: 80px; 
+    padding:15px 0 0 10px; float:left;
+}
+.nav_btn, .nav_close_btn{ display:none; }
+nav{ float:right; margin-right:30px; }
+
+.gnb li{ width:130px; height:80px; float:left; }
+
+.gnb button{
+    display:block;
+    width:100%; height:80px;
+    font-size:20px; font-weight:bold;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    color:#fff; font-family:Josefin Sans;
+}
+.gnb button:hover{ border-bottom:5px solid #fff; box-sizing:border-box; }
+
+
+#container{ margin-top:80px; }
+
+ /* 2. intro  -------------------------------------*/
+ .intro{
+    width:100%;
+    height:100%; overflow:hidden; 
+    background: url(../images/background5.jpg) no-repeat center top/cover fixed;
+  }
+  .intro_wrap h2{ display:none; }
+  .intro_wrap ul{
+      width:300%;
+      height:500px; margin-top:100px;
+  }
+  .intro_wrap li{
+      width:33.333%;
+      height:500px;
+      float:left;
+      text-align:left; 
+  }
+  .intro_wrap li div{
+      width:1300px; margin:4% auto;
+      padding:200px 20px 0;
+  }
+  .intro_wrap li div p{ margin-left:50px; }
+  .intro_wrap li p:first-child{
+      font-size:60px; font-weight:bold; color:#fff;
+      letter-spacing:-2px;
+      padding: 30px 0 40px 0;
+  }
+  .intro_wrap li p:nth-child(2){
+      margin-bottom:20px; color:#fff; margin-top: 5%;
+      font-size:30px; font-weight:bold; font-family:"나눔스퀘어";
+  }
+  .intro_wrap li p:nth-child(3){
+    font-size:24px; font-family:"나눔스퀘어";
+    color:#fff;
+}
+  .intro_wrap li p:last-child{
+      font-size:24px; font-family:"나눔스퀘어";
+      color:#fff;
+  }
+  .intro_wrap li br{ display:none; }
+  
+  .intro_btn{
+      width:180px; height:30px;
+      position:absolute;
+      left:50%; margin-top:150px;
+  }
+
+  /* 3. concept  -------------------------------------*/
+  #container section:not(:first-child){
+      height:1000px; text-align:center;
+  }
+  #container section h2{
+      height:100px; line-height:100px;
+      font-size:25px;
+  }
+ 
+  /* 4. profile  -------------------------------------*/
+  .profile_wrap{ width:1200px; margin:0 auto; }
+  .profile_wrap h2{ color:#fff; margin-top:30px; }
+  .profile_wrap div{
+      height:850px; text-align:left; margin:0 25px 30px;
+      width:92%; margin:0 4% 50px 4%; font-size:20px;
+      padding:50px 5px; color:#fff;
+  }
+  .profile_wrap div img{ float:left; margin-right:100px; width:250px; }
+  .profile_wrap div p{ margin-bottom:30px; line-height: 27px; }
+  .profile_wrap div p:first-child{ 
+      font-size: 30px; font-weight:bold; 
+      line-height: 40px;
+  }
+  .profile_wrap div li{
+      width:250px; height:332px;
+      border:1px solid #666;
+      border-radius:23px;
+      overflow:hidden;
+      float:left; margin-right:50px;
+  }
+
+  p.typing-txt{
+    display: none;
+} 
+.typing {   
+    /*position: absolute;*/ 
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+}

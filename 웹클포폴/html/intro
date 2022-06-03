@@ -1,0 +1,44 @@
+<section class="intro">
+            <div class="intro_wrap">
+                <h2>소개</h2> 
+                <ul>
+                    <li class="v1">
+                        <div>
+                            <p><b>강<span style="font-size:55px">철</span>같은 끈기를 갖춘<br> 퍼블리셔</b></p>
+                            <p>Strong & Solidity</p>
+                            <p>
+                                다양한 웹 디바이스를 만들기 위해 끊임없이
+                                노력하는 퍼블리셔 
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="v2">
+                        <div>
+                            <p><b>아이디어가 <span style="font-size:55px">철철</span><br> 넘치는 퍼블리셔</b></p>
+                            <p>Creative idea</p>
+                            <p>
+                                상황에 알맞은 코딩을 하며 어떠한 디자인이든 구조를
+                                파악하여 배치와 동작을 창의적으로 설계하는 퍼블리셔
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="v3">
+                        <div>
+                            <p><b><span style="font-size:55px">철</span>두<span style="font-size:55px">철</span>미한 꼼꼼함을<br> 겸비한 퍼블리셔</b></p>
+                            <p>Thorough & Detailed</p>
+                            <p>
+                                정보의 구조를 꼼꼼하게 코딩하며 그와 관련된 시각적
+                                이미지를 알맞게 배치하는 퍼블리셔
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="intro_btn">
+                    <button><img src="images/intro_btn.png" alt="인트로버튼"></button>
+                    <button><img src="images/intro_btn.png" alt="인트로버튼"></button>
+                    <button><img src="images/intro_btn.png" alt="인트로버튼"></button>
+                    <button><img src="images/intro_btn_play.png" alt="인트로재생버튼"></button>
+                </div>
