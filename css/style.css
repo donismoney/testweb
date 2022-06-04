@@ -9,7 +9,7 @@ section{float:left; clear:both; width:100%; }
 .job{ background: url(../images/job_bg.jpg) no-repeat center top/cover fixed; }
 .port{ background: url(../images/port_bg.jpg) no-repeat center top/cover fixed; }
 .contact{ background: url(../images/contact_bg.jpg) no-repeat center top/cover fixed; }  
-.profile{ background:#000; }  
+.profile{ background:#000;}  
 .edu{ background:#000; }   
 .job{ background:#000; }
 .port{ background:#000; }
@@ -92,7 +92,7 @@ nav{ float:right; margin-right:30px; }
 
   /* 3. concept  -------------------------------------*/
   #container section:not(:first-child){
-      height:1000px; text-align:center;
+      height:1100px; text-align:center;
   }
   #container section h2{
       height:100px; line-height:100px;
@@ -101,7 +101,7 @@ nav{ float:right; margin-right:30px; }
  
   /* 4. profile  -------------------------------------*/
   .profile_wrap{ width:1200px; margin:0 auto; }
-  .profile_wrap h2{ color:#fff; margin-top:30px; }
+  .profile_wrap h2{ color:#fff; margin-top: 20%; }
   .profile_wrap div{
       height:850px; text-align:left; margin:0 25px 30px;
       width:92%; margin:0 4% 50px 4%; font-size:20px;
@@ -135,4 +135,140 @@ nav{ float:right; margin-right:30px; }
     0%{border-right: 1px solid #fff} 
     50%{border-right: 1px solid #000} 
     100%{border-right: 1px solid #fff} 
+}
+
+/* 6. job  -------------------------------------*/
+.job{ height:1000px; color:#fff; }
+.job_wrap{ width:1200px; margin:0 auto; }
+.job_wrap h2{ margin-top:20px; }
+.job_chart{ width:90%; margin:0 5% 50px 5%; }
+.job_chart li{
+    width:100%; height:40px;
+    /*border:1px solid #d9d9d9;*/
+    margin:10px 0; line-height:40px;
+    color:#fff;
+}
+.job_chart li p{
+    text-align:left;
+    text-indent:10px;
+    overflow:hidden;
+    font-weight: bold; 
+}
+.job_chart li:nth-child(1) p{ width:80%; background:#30a8ff; }
+.job_chart li:nth-child(2) p{ width:80%; background:#ff9a00; }
+.job_chart li:nth-child(3) p{ width:95%; background:#FF5733; }
+.job_chart li:nth-child(4) p{ width:70%; background:#F0DB4F; }
+.job_chart li:nth-child(5) p{ width:60%; background:#2565AE; }
+
+.job_info li{
+    width:380px; height:180px;
+    float:left; padding-top:25px; 
+    /* background:rgba(174,182,185,0.9); */
+    background:rgb(48, 168, 255,0.1);
+    margin:10px; border-radius:23px;
+}
+
+.job_info li:nth-child(4){ margin-left:210px;  }
+.job_info li p:first-child{height:50px; line-height:40px; font-size:20px; }
+.job_info li p:last-child{ padding:0 0 15px; font-size:17px; }
+
+
+.job_info li:nth-child(1) p b{  color:#30a8ff; }
+.job_info li:nth-child(2) p b{  color:#ff9a00; }
+.job_info li:nth-child(3) p b{  color:#FF5733; }
+.job_info li:nth-child(4) p b{  color:#F0DB4F; }
+.job_info li:nth-child(5) p b{  color:#2565AE; }
+
+/* 5. edu  -------------------------------------*/
+.edu{
+    height:1000px; color:#fff;
+    background: #000;/* 
+    background: url(../images/profile_bg.jpg) no-repeat center top/cover fixed; */
+}
+.edu_wrap{ width:1200px; margin:0 auto;  background: #000;}
+.edu_wrap h2{ margin:20px 0; }
+.edu_wrap table{
+    border-collapse:collapse;
+    width:90%; margin:0 5%;
+}
+.edu_wrap tr>*{
+    height:50px;  border-bottom:1px solid;
+}
+.edu_wrap th{
+    width:250px; height:40px;
+    line-height:40px; font-size:18px;
+    background:rgba(174,182,185,0.9); color:#fff;
+    border-top-left-radius:23px;
+     
+        
+} 
+
+.edu_wrap td{ padding:25px; text-align:left; font-size:17px; }
+.edu_wrap td br{ display:none; }
+
+.edu_wrap tr:nth-child(1) th{ background:rgb(48, 168, 255,0.07);} 
+.edu_wrap tr:nth-child(2) th{ background:rgb(48, 168, 255,0.09);} 
+.edu_wrap tr:nth-child(3) th{ background:rgb(48, 168, 255,0.11);} 
+.edu_wrap tr:nth-child(4) th{ background:rgb(48, 168, 255,0.13);} 
+.edu_wrap tr:nth-child(5) th{ background:rgb(48, 168, 255,0.15);} 
+.edu_wrap tr:nth-child(6) th{ background:rgb(48, 168, 255,0.17);} 
+.edu_wrap tr:nth-child(7) th{ background:rgb(48, 168, 255,0.20);} 
+
+
+/* 8. contact  -------------------------------------*/
+.contact{ clear:both; color:#fff; }
+.contact_wrap{ width:90%; margin:0 5%; }
+.contact_wrap h3{
+    display:none;
+}
+.email{
+   /*  background:rgba(255,255,255,0.8); */
+   background:#04111a;
+    width:850px; height:530px;
+    padding-top:35px;
+    border-radius:20px;
+    margin:0 auto;
+}
+.email p{
+    text-align:center;
+    font-size:20px; font-family:NanumSquare;
+    color:rgb(255, 255, 255); margin-bottom:25px; 
+}
+.email div input{
+    width:750px; height:50px;
+    font-size:15px;
+    text-indent:5px;
+    border:1px solid #fff;
+    font-family:NanumSquare;
+}
+.email div input::placeholder{
+    color:#cccccc;
+}
+.title input{
+    border-radius:20px;
+    margin-bottom:15px;
+}
+.address input{
+    border-radius:20px;
+    margin-bottom:15px;
+}
+.contents textarea{
+    width:750px; height:255px;
+    border-radius:20px;
+    font-size:16px; padding-top:10px;
+    text-indent:5px; border:1px solid #fff;
+    font-family:NanumSquare;
+}
+.contents textarea::placeholder{
+    color:#cccccc;
+}
+.email button{
+    width:100px; height:35px;
+    background:#fff; color:#777;
+    border-radius:20px; font-size:15px;
+    margin-top:10px; font-family:NanumSquare;
+}
+.email button:hover{
+    border:2px solid #000;
+    color:#000;
 }

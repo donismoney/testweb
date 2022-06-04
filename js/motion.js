@@ -43,10 +43,10 @@ function eduMotion(){
 
 function jobMotion(){
         $(".job_chart li:eq(0) p").animate({width:"80%"},800);
-        $(".job_chart li:eq(1) p").animate({width:"90%"},600);
+        $(".job_chart li:eq(1) p").animate({width:"80%"},600);
         $(".job_chart li:eq(2) p").animate({width:"95%"},1200);
-        $(".job_chart li:eq(3) p").animate({width:"85%"},1000);
-        $(".job_chart li:eq(4) p").animate({width:"80%"},700);
+        $(".job_chart li:eq(3) p").animate({width:"70%"},1000);
+        $(".job_chart li:eq(4) p").animate({width:"60%"},700);
 }
 
 function AddTyping(){
@@ -234,7 +234,7 @@ $(document).ready(function(){
       var subject = $('#subject').val();
       var email   = $('#email').val();
       var contents= $('#contents').val(); 
-      var mailto ="mailto:cheoluk96@hanmail.net,jelee9138@daum.net?subject="+subject+"&body=메일 답변 받으실 주소:"+email+"%0D%0A%0D%0A내용:"+contents;
+      var mailto ="mailto:jaehyun2112@naver.com?subject="+subject+"&body=메일 답변 받으실 주소:"+email+"%0D%0A%0D%0A내용:"+contents;
       $("#submitAlink").attr('href',mailto); 
       $('#submitAlink').get(0).click();
       location.reload(true);
