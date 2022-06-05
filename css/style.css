@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,table,tr,th,td{ margin:0; padding:0; }
 li{ list-style:none; }
@@ -15,6 +18,7 @@ section{float:left; clear:both; width:100%; }
 .port{ background:#000; }
 .contact{ background:#000; }
 
+/* 1.네비게이션 바  -------------------------------------*/
 #header{ background:#000; }
 #header{ 
     position:fixed; left:0; top:0; z-index:1;
@@ -43,7 +47,7 @@ nav{ float:right; margin-right:30px; }
 
 #container{ margin-top:80px; }
 
- /* 2. intro  -------------------------------------*/
+ /* 2. 인트로  -------------------------------------*/
  .intro{
     width:100%;
     height:100%; overflow:hidden; 
@@ -99,7 +103,7 @@ nav{ float:right; margin-right:30px; }
       font-size:25px;
   }
  
-  /* 4. profile  -------------------------------------*/
+  /* 4. 프로필  -------------------------------------*/
   .profile_wrap{ width:1200px; margin:0 auto; }
   .profile_wrap h2{ color:#fff; margin-top: 20%; }
   .profile_wrap div{
@@ -119,6 +123,7 @@ nav{ float:right; margin-right:30px; }
       border-radius:23px;
       overflow:hidden;
       float:left; margin-right:50px;
+      margin-left: 10%;
   }
 
   p.typing-txt{
@@ -137,7 +142,7 @@ nav{ float:right; margin-right:30px; }
     100%{border-right: 1px solid #fff} 
 }
 
-/* 6. job  -------------------------------------*/
+/* 5. 관심분야  -------------------------------------*/
 .job{ height:1000px; color:#fff; }
 .job_wrap{ width:1200px; margin:0 auto; }
 .job_wrap h2{ margin-top:20px; }
@@ -179,7 +184,7 @@ nav{ float:right; margin-right:30px; }
 .job_info li:nth-child(4) p b{  color:#F0DB4F; }
 .job_info li:nth-child(5) p b{  color:#2565AE; }
 
-/* 5. edu  -------------------------------------*/
+/* 6. 대학생활  -------------------------------------*/
 .edu{
     height:1000px; color:#fff;
     background: #000;/* 
@@ -214,10 +219,102 @@ nav{ float:right; margin-right:30px; }
 .edu_wrap tr:nth-child(6) th{ background:rgb(48, 168, 255,0.17);} 
 .edu_wrap tr:nth-child(7) th{ background:rgb(48, 168, 255,0.20);} 
 
+/* 7. 포트폴리오  -------------------------------------*/
+    .port{ height:1100px; color:#fff; }
+    .port_wrap{ width:1200px; margin:0 auto; }
+    .port_btn{
+        width:90%; height:50px;
+        margin:0 5% 50px 5%;
+    }
+    .port_btn button{
+        display:block; float:left;
+        width:30%; height:40px; margin:0 1.6%;
+        border:2px solid #04111a;
+        box-sizing: border-box;
+        font-size:18px; border-radius:20px;
+        color:#fff;
+    }
+    .port_wrap ul{
+        width:1200px; margin:0 auto;
+    }
+    .port_wrap li h3{
+        font-size:26px; height:50px;
+        line-height:50px; margin-bottom:60px;
+    }
+    
+    .port_wrap>ul>li:nth-child(1)>p{
+        width:530px; float:left;
+        margin:30px 0 0 75px;
+    }
+    .port_wrap>ul>li:nth-child(1)>p img{ width:100%; height:100% }
+    
+    .port_wrap>ul>li:nth-child(1) tr p:nth-child(1){
+        margin-bottom: 10px;
+        font-size:17px;
+    }
+    .port_wrap>ul>li:nth-child(1) tr p:nth-child(3){
+        margin-bottom: 15px;
+        font-size:17px;
+    }
+    .port_wrap>ul>li:nth-child(1) tr p:nth-child(2){
+        margin:0 2.5% 0 5%;
+        margin-bottom: 10px;
+        font-size:17px;
+    }
+    .port_wrap>ul>li:nth-child(1) a{
+        display:block; height:50px; line-height:50px;
+        background:#000; color:#fff;
+    }
+    .port_wrap>ul>li:nth-child(1) a:hover{
+        border:1px solid; background:#fff; color:#000;
+        box-sizing: border-box;
+    }
+    
+    
+    .port_wrap>ul>li:nth-child(1) table{
+        width:480px; height:350px;
+        border-collapse:collapse;
+        float:right; margin-right:80px;
+        font-size:20px; background:#04111a;
+        border-radius:23px;
+    }
+    .port_wrap>ul>li:nth-child(1) table td{
+        font-size:15px; 
+    }
+    .port_wrap>ul>li:nth-child(1) table br{ display:none; }
+    .port_wrap>ul>li:nth-child(1) table th{
+        width:150px; height:50px;
+    }
+    
+    .port_wrap>ul>li:nth-child(2) li{
+        width:175px; height:240px; 
+        background:none; float:left;
+        margin:50px 5%;
+    }
+    .port_wrap>ul>li:nth-child(3) li{
+        width:200px; height:180px;
+        background:none; float:left;
+        margin: 2%;
+    }
+    
+    .port_wrap>ul>li:nth-child(2) li img{
+        width:100%; height:100%;
+    }
+    .port_wrap>ul>li:nth-child(3) li img{
+        width:100%; height:100%;
+    }
+    
+    .port_wrap ul table:nth-of-type(1){ display:none; }
+     
+    .wd_more_btn1, .wd_more_btn2, .more_btn1, .more_btn2{
+        display:none;
+    }
 
-/* 8. contact  -------------------------------------*/
+
+    
+/* 8. 이메일 연락  -------------------------------------*/
 .contact{ clear:both; color:#fff; }
-.contact_wrap{ width:90%; margin:0 5%; }
+.contact_wrap{ width:90%; margin:5%; }
 .contact_wrap h3{
     display:none;
 }
@@ -271,4 +368,25 @@ nav{ float:right; margin-right:30px; }
 .email button:hover{
     border:2px solid #000;
     color:#000;
+}
+
+/* 9. 위로가기 버튼  -------------------------------------*/
+#footer{
+    height:150px;
+    border-top:1px solid #d9d9d9;
+    text-align:center;
+}
+.footer_wrap p:first-child{
+    position:fixed;
+    left: 50%; margin-left:550px;
+    bottom:30px;
+}
+.footer_wrap button{
+    width:45px; height:45px;
+    margin-top: 17px;
+}
+
+.footer_wrap{ 
+    background:#000; color:white; font-size: 15px; 
+    font-weight: bolder;
 }

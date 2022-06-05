@@ -239,4 +239,5 @@ $(document).ready(function(){
       $('#submitAlink').get(0).click();
       location.reload(true);
     });  
-});    
+}); 
+
